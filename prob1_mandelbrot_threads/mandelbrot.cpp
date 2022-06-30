@@ -173,7 +173,6 @@ void mandelbrotThread(int numThreads, float x0, float y0, float x1, float y1,
     for (int i = 1; i < numThreads; i++) {
         pthread_join(workers[i], NULL);
     }
-<<<<<<< HEAD
 
     int st = 0;
     int end = width*splitHeight;
@@ -184,6 +183,4 @@ void mandelbrotThread(int numThreads, float x0, float y0, float x1, float y1,
         st +=(width*splitHeight);
         end +=(width*splitHeight);
     }
-=======
->>>>>>> fc2bd42... more style improvements
 }
